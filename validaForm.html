@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Validando Formulário com JS </title>
+	<style type="text/css">
+		#resultado{
+			height: 20px;
+			width: 150px;
+			background-color: brown;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="nome"> Nome Completo </label>
+		<input type="text" id="nome" name="nome">
+		<p>
+			<label for="resumo"> Resumo </label>
+			<input type="text" id="resumo" name="resumo" readonly>
+		<p>
+			<div id="resultado">  </div>
+			<button type="button" onclick="pegarValor()">
+			Validar campo
+		</button>
+	</form>
+	<script>
+		function pegarValor(){
+			let nome = document.getElementById("nome").value;
+			document.getElementById("resumo").value = nome;
+			document.getElementById("resultado").innerHTML = nome;
+			// alert(nome);
+			// console.log(nome); // vai exibir no console
+		}
+	</script>
+</body>
+</html>

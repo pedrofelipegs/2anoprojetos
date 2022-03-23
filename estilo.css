@@ -1,0 +1,45 @@
+.square{
+	width: 150px;
+	height: 150px;
+	background-image: url(https://madmais.vteximg.com.br/arquivos/ids/157184-0-0/LAMINADO-PERTECH-AZUL-REAL-PP3620-TX.jpg?v=637308454415300000);
+	background-color: #403659;
+	transform: translate(400px,250px);
+	border-radius: 25%;
+	animation: quadrado 5s ease 1s infinite alternate running;
+}
+@keyframes quadrado{
+	0%{
+		transform: translate(400px,250px);
+	}
+	50%{
+		transform: translate(700px,250px);
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: translate(400px,250px);
+		transform: rotate(0deg);
+	}
+}
+.circle{
+	position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(https://madmais.vteximg.com.br/arquivos/ids/157267-1000-1000/FORMICA-PLASTICA-LARANJA-TX.jpg?v=637310219719400000);
+    transform: translate(400px,50px);
+    z-index: -1000;
+    animation: circulo 4s ease 0s infinite alternate running;;
+}
+@keyframes circulo{
+    0%{
+     transform: translateX(500px);
+    }
+    50%{
+     transform: translateX(-50px);
+     /*transform: scale(1.5);*/
+    }
+    100%{
+     transform: translateX(500px);
+     transform: scale(1);
+    }
+}

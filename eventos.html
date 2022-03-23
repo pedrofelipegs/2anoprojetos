@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form>
+		<p> <span> Digite um valor: </span>
+			<input type="text" id="valor" oninput="escrever()">
+	</form>
+	<hr>
+	<p> <span> Resultado: </span>
+		<div id="result"> </div>
+		<script type="text/javascript">
+			function escrever(){
+				let valor = document.getElementById("valor").value;
+				document.getElementById("result").innerHTML = valor;
+			}
+		</script>
+</body>
+</html>

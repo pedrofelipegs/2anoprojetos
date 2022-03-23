@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Position</title>
+	<style type="text/css">
+		body{
+			background: url(https://i.gifer.com/MS4n.gif);
+			background-size: 100% 100%;
+		}
+		.pai{
+			position: relative;
+			top: 30px;
+			left: 100px;
+			width: 700px;
+			height: 500px;
+			background: url(https://images6.alphacoders.com/860/thumb-1920-860645.png);
+			background-size: 700px 500px;
+			border: 2px solid black;
+		}
+		.filha{
+			position: absolute;
+			top: 250px;
+			left: 350px;
+			margin-top: -50px;
+			margin-left: -50px;
+			width: 100px;
+			height: 100px;
+			background: url(https://i.gifer.com/33HU.gif);
+			background-size: 120px 120px;
+			/*background-color: #341f97;*/
+			/*border: 1px dotted #00d2d3;*/
+			z-index: 2;
+			/*animation-name: animacao01;
+			animation-duration: 3s;
+			animation-timing-function: ease-in;
+			animation-iteration-count: infinite;*/
+
+			animation: animacao01 5s ease-in 1s infinite alternate running;
+		}
+		.filha2{
+			position: absolute;
+			top: 50vh;
+			left: 50vw;
+			margin-top: -50px;
+			margin-left: -50px;
+			width: 100px;
+			height: 100px;
+			background: url(https://i.gifer.com/33HU.gif);
+			background-size: 120px 120px;
+			/*border: 1px dotted #00d2d3;*/
+			z-index: 1;
+			animation: animacao01 7s ease-in 1s infinite alternate running;
+		}
+		@keyframes animacao01{
+			/*from{
+				top: 250px;
+				left: 350px;
+			}
+			to{
+				top: 400px;
+				left: 500px;
+				background-color: black;
+			}*/
+			0%{
+				top: 50px;
+				left: 50px;
+			}
+			25%{
+				top: 50px;
+				left: 650px;
+			}
+			50%{
+				left: 650px;
+				top: 450px;
+			}
+			75%{
+				top: 450px;
+				left: 50px;
+				
+			}
+			100%{
+				top: 50px;
+				left: 50px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="pai">
+		<div class="filha"> </div>
+		<div class="filha2"> </div>
+	</div>
+</body>
+</html>

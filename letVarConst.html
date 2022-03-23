@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Tipos let Var e Const </title>
+</head>
+<body>
+	<script>
+		var idade = 25; // global
+		function alteraIdade(){
+			idade = 30;
+		}
+		alteraIdade();
+		console.log(idade); // out: 30
+		console.log("----------")
+		function alterarNome(){
+			var nome = "José"; // escopo local/função
+		}
+		// console.log(nome); // Erro de escopo
+
+		let salario = 1250;
+		// let salario = 1200;
+
+		{
+			let cpf = "110.572.103-58"; // escopo bloco/local
+			console.log(cpf);
+		}
+		// console.log(cpf);
+
+		let logica = Boolean(false);
+		if(logica){
+			let CEP = "63500-773";
+		} else{
+			let CEP = "63500-106";
+			console.log(CEP);
+		}
+		// console.log(CEP);
+		console.log("-- Constante --");
+		const pi = 3.14;
+		// pi = 4; // é pra ter erro
+
+		// constantes em JS são mutáveis
+		const obj = {
+			curso01: "Informática",
+			curso02: "Administação"
+		}
+		obj.curso02 = "Enfermagem";
+		console.log(obj.curso02); // Enfermagem
+		console.log(obj); // estrutura inteira do obj
+
+
+	</script>
+</body>
+</html>

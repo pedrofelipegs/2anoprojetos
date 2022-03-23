@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Orientações contra o COVID-19 </title>
+	<style type="text/css">
+		body{
+			background-image: url(https://d3043uog1ad1l6.cloudfront.net/uploads/2020/03/photo-1584118624012-df056829fbd0.jpeg);
+		}
+		#Pai{
+		}
+		.botao{
+			font-size: 25px;
+			border: 1px solid black;
+			width:450px;
+			height: 45px;
+			border-radius: 10px;
+			margin-bottom: -4px;
+		}
+		.botao:hover{
+			background-color: black;
+			color: red;
+			height: 80px;
+			width: 600px;
+			transition-duration: 2s;
+		}
+		h1{
+			background-color: white;
+		}
+		.result1, .result2, .result3, .result4{
+			
+		}
+		.inneu{
+			display: none;
+		}
+		.inner{
+			display: block;
+			background-color: white;
+			height: 50px;
+			width: 500px;
+			font-size: 23px;
+			margin-top: 10px;
+		}
+		.inner:hover{
+			color: aqua;
+		}
+	</style>
+</head>
+<body>
+	<div id="Pai"></div>
+	<br>
+	<br>
+	<center><h1> Orientações contra o COVID-19 </h1> </center>
+	<center> <button class="botao" onclick="pegarDados1()"> Você é idoso? </button> </center> <br>
+	<center> <button class="botao" onclick="pegarDados2()"> Sofre de problemas respiratórios? </button> </center> <br>
+	<center> <button class="botao" onclick="pegarDados3()"> É diabético? </button> </center> <br>
+	<center> <button class="botao" onclick="pegarDados4()"> É saudavél? </button> </center>
+
+	<center> <div class="result1"> Fique em casa e vacine-se! </div> </center>
+	<center> <div class="result2"> Sim </div> </center>
+	<center> <div class="result3"> Não </div> </center>
+	<center> <div class="result4"> No geral, sim </div> </center>
+</div>
+<div class="inneu" id="texto"> </div>
+</body>
+</html>

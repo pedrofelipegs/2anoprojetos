@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Switch Case em JS </title>
+</head>
+<body>
+	<script type="text/javascript">
+		let time = new Date().getHours();
+		console.log(time);
+		if (time < 12) {
+			console.log("Boa Dia");
+		} else if (time < 18) {
+			console.log("Boa Tarde");
+		} else {
+			console.log("Boa Noite");
+		}
+
+		let dia = new Date().getDay();
+		console.log(dia);
+
+		let diaSemana = "";
+		// operador condicional ternário
+		dia == 0 ? diaSemana = "Domingo" : diaSemana = "";
+		// condição ? executa se for true : executa se false;
+		dia == 1 ? diaSemana = "Segunda-Feira" : diaSemana;
+		dia == 2 ? diaSemana = "Terça-Feira" : diaSemana;
+		dia == 3 ? diaSemana = "Quarta-Feira" : diaSemana;
+		dia == 4 ? diaSemana = "Quinta-Feira" : diaSemana;
+		dia == 5 ? diaSemana = "Sexta-Feira" : diaSemana;
+		dia == 6 ? diaSemana = "Sábado" : diaSemana;
+		console.log(diaSemana);
+
+		let mes = new Date().getMonth();
+		console.log(mes);
+		let nomeMes
+		switch(mes){
+			case 0 : nomeMes = "Janeiro";
+			break;
+			case 1 : nomeMes = "Fevereiro";
+			break;
+			case 2 : nomeMes = "Março";
+			break;
+			case 3 : nomeMes = "Abril";
+			break;
+            case 4 : nomeMes = "Maio";
+            break;
+            case 5 : nomeMes = "Junho";
+            break;
+            case 6 : nomeMes = "Julho";
+            break;
+            case 7 : nomeMes = "Agosto";
+            break;
+            case 8 : nomeMes = "Setembro";
+            break;
+            case 9 : nomeMes = "Outubro";
+            break;
+            case 10 : nomeMes = "Novembro";
+            break;
+            case 11 : nomeMes = "Dezembro";
+            break;
+            default : console.log("Mês inválido!");
+        }
+        console.log(nomeMes);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Animation </title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: fixed;
+			animation: mover 5s linear;
+		}
+		@keyframes mover{
+			0% {
+				top: 0px;
+				left: 0px;
+			}
+			20% {
+				top: 0px;
+				right: 0px;
+			}
+			40% {
+				bottom: 0px;
+				right: 0px;
+			}
+			60% {
+				bottom: 0px;
+				left: 0px;
+			}
+			80% {
+				top: 0px;
+				left: 0px;
+			}
+			100% {
+				top: 50%;
+				left: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
